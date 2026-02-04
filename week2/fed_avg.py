@@ -7,7 +7,6 @@ import numpy as np
 import copy
 import wandb
 
-# --- CONFIGURATION ---
 args = {
     "num_clients": 100,      # Total clients in the system
     "fraction": 0.1,         # C: Fraction of clients to select per round (10 clients)
