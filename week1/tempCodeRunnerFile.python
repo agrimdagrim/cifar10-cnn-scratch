@@ -1,0 +1,15 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+t = np.linspace(0, 1, 100)
+v_cases = [0, 1, -1]
+for v0 in v_cases:
+    v_t = 1 + (v0 - 1) * np.exp(-10 * t)
+    plt.plot(t, v_t, label=f'v(0)={v0} m/s')
+
+plt.title('Velocity v(t) vs Time')
+plt.xlabel('Time (s)')
+plt.ylabel('Velocity (m/s)')
+plt.legend()
+plt.grid(True)
+plt.show()
